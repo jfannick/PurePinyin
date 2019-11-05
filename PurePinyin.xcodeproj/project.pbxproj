@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39337A3821578FA100F05672 /* PYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39337A3721578FA100F05672 /* PYViewController.swift */; };
+		39337A402157904100F05672 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39337A3F2157904100F05672 /* Base.swift */; };
+		39337A42215791B200F05672 /* PYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39337A41215791B200F05672 /* PYView.swift */; };
+		3938B2DD21A594B700908B68 /* appending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D121A594B600908B68 /* appending.swift */; };
+		3938B2DE21A594B700908B68 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D821A594B600908B68 /* search.swift */; };
+		3938B2DF21A594B700908B68 /* substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D921A594B600908B68 /* substring.swift */; };
+		3938B2E021A594B700908B68 /* faststring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DA21A594B600908B68 /* faststring.swift */; };
+		3938B2E121A594B700908B68 /* replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DB21A594B700908B68 /* replace.swift */; };
+		3938B2E221A594B700908B68 /* split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DC21A594B700908B68 /* split.swift */; };
+		393FF374222DA46F00B160CD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393FF373222DA46F00B160CD /* TabBarController.swift */; };
+		3945B3162046ABD7008CEF2D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3945B3072046AB9E008CEF2D /* SQLite.framework */; };
+		394B0C80224D088A00331D4E /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394B0C7F224D088A00331D4E /* Keyboard.xib */; };
+		396AF27921540B61005DA562 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396AF27821540B61005DA562 /* Media.xcassets */; };
+		396C1479222BD90C00BADCBD /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C1478222BD90C00BADCBD /* BrowserViewController.swift */; };
+		3978EE42222DF98600FCEF7C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978EE41222DF98600FCEF7C /* SettingsViewController.swift */; };
+		398654F3222D4F0B00750079 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39337A3F2157904100F05672 /* Base.swift */; };
+		398654FB222D50F100750079 /* appending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D121A594B600908B68 /* appending.swift */; };
+		398654FC222D50F100750079 /* faststring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DA21A594B600908B68 /* faststring.swift */; };
+		398654FD222D50F100750079 /* replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DB21A594B700908B68 /* replace.swift */; };
+		398654FE222D50F100750079 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D821A594B600908B68 /* search.swift */; };
+		398654FF222D50F100750079 /* split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2DC21A594B700908B68 /* split.swift */; };
+		39865500222D50F100750079 /* substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938B2D921A594B600908B68 /* substring.swift */; };
+		398C79662047F17D006C4A47 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3945B3072046AB9E008CEF2D /* SQLite.framework */; };
+		398C79672047F17D006C4A47 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3945B3072046AB9E008CEF2D /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39A245F4228D88AA00AC18F0 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A245E9228D888A00AC18F0 /* Zip.framework */; };
+		39A245F5228D88B900AC18F0 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39A245E9228D888A00AC18F0 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39A8429C2046A859003102F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8429B2046A859003102F1 /* AppDelegate.swift */; };
+		39A8429E2046A859003102F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8429D2046A859003102F1 /* ViewController.swift */; };
+		39A842A12046A859003102F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8429F2046A859003102F1 /* Main.storyboard */; };
+		39A842A42046A859003102F1 /* PurePinyin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39A842A22046A859003102F1 /* PurePinyin.xcdatamodeld */; };
+		39A842A62046A859003102F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A842A52046A859003102F1 /* Assets.xcassets */; };
+		39A842D32046A8EA003102F1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A842D22046A8EA003102F1 /* KeyboardViewController.swift */; };
+		39A842D72046A8EA003102F1 /* PinyinKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39A842D02046A8EA003102F1 /* PinyinKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39A842DD2046A911003102F1 /* pinyin.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 39A842DC2046A910003102F1 /* pinyin.sqlite */; };
+		39A842DE2046A911003102F1 /* pinyin.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 39A842DC2046A910003102F1 /* pinyin.sqlite */; };
+		39AFF536227855A600F78EB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8429B2046A859003102F1 /* AppDelegate.swift */; };
+		39F06A152102065D008B86BE /* KB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F06A142102065D008B86BE /* KB.xib */; };
+		39FD381A2270FDB0007BC29A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FD38132270FDAF007BC29A /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3945B3062046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		3945B3082046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		3945B30A2046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		3945B30C2046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		3945B30E2046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		3945B3102046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		3945B3122046AB9E008CEF2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		398C79682047F17D006C4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		39A245E8228D888A00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 347E3A741C1DFFB500A11FD3;
+			remoteInfo = Zip;
+		};
+		39A245EA228D888A00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 347E3A7E1C1DFFB500A11FD3;
+			remoteInfo = ZipTests;
+		};
+		39A245EC228D888A00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343F50FF1C8DAEEC0028C434;
+			remoteInfo = "Zip OSX";
+		};
+		39A245EE228D888A00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343F51081C8DAEEC0028C434;
+			remoteInfo = "Zip OSXTests";
+		};
+		39A245F0228D888A00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 342545B51CE525B200336074;
+			remoteInfo = "Zip tvOS";
+		};
+		39A245F2228D889F00AC18F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 347E3A731C1DFFB500A11FD3;
+			remoteInfo = Zip;
+		};
+		39A842D52046A8EA003102F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A842902046A859003102F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39A842CF2046A8EA003102F1;
+			remoteInfo = PinyinKeyboard;
+		};
+		39D8FB51216B51F400AFA321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		398C796A2047F17D006C4A47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39A245F5228D88B900AC18F0 /* Zip.framework in Embed Frameworks */,
+				398C79672047F17D006C4A47 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A842DB2046A8EA003102F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39A842D72046A8EA003102F1 /* PinyinKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39337A3721578FA100F05672 /* PYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PYViewController.swift; sourceTree = "<group>"; };
+		39337A3F2157904100F05672 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		39337A41215791B200F05672 /* PYView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PYView.swift; sourceTree = "<group>"; };
+		3938B2D121A594B600908B68 /* appending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appending.swift; sourceTree = "<group>"; };
+		3938B2D821A594B600908B68 /* search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
+		3938B2D921A594B600908B68 /* substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = substring.swift; sourceTree = "<group>"; };
+		3938B2DA21A594B600908B68 /* faststring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faststring.swift; sourceTree = "<group>"; };
+		3938B2DB21A594B700908B68 /* replace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = replace.swift; sourceTree = "<group>"; };
+		3938B2DC21A594B700908B68 /* split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = split.swift; sourceTree = "<group>"; };
+		393FF373222DA46F00B160CD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		394B0C7F224D088A00331D4E /* Keyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		396AF27821540B61005DA562 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		396C1478222BD90C00BADCBD /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		3978EE41222DF98600FCEF7C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		39A245E0228D888900AC18F0 /* Zip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Zip.xcodeproj; path = Carthage/Checkouts/Zip/Zip.xcodeproj; sourceTree = "<group>"; };
+		39A842982046A859003102F1 /* PurePinyin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurePinyin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A8429B2046A859003102F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39A8429D2046A859003102F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39A842A02046A859003102F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39A842A32046A859003102F1 /* PurePinyin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PurePinyin.xcdatamodel; sourceTree = "<group>"; };
+		39A842A52046A859003102F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39A842AA2046A859003102F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A842D02046A8EA003102F1 /* PinyinKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinyinKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A842D22046A8EA003102F1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		39A842D42046A8EA003102F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A842DC2046A910003102F1 /* pinyin.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinyin.sqlite; sourceTree = "<group>"; };
+		39F06A142102065D008B86BE /* KB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KB.xib; sourceTree = "<group>"; };
+		39FAC10622798D9F00EB1420 /* PurePinyin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurePinyin.entitlements; sourceTree = "<group>"; };
+		39FAC10722798E2300EB1420 /* PinyinKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinyinKeyboard.entitlements; sourceTree = "<group>"; };
+		39FD38132270FDAF007BC29A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39A842952046A859003102F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A245F4228D88AA00AC18F0 /* Zip.framework in Frameworks */,
+				39FD381A2270FDB0007BC29A /* WebKit.framework in Frameworks */,
+				398C79662047F17D006C4A47 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A842CD2046A8EA003102F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3945B3162046ABD7008CEF2D /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3945B2FD2046AB9E008CEF2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3945B3072046AB9E008CEF2D /* SQLite.framework */,
+				3945B3092046AB9E008CEF2D /* SQLiteTests iOS.xctest */,
+				3945B30B2046AB9E008CEF2D /* SQLite.framework */,
+				3945B30D2046AB9E008CEF2D /* SQLiteTests Mac.xctest */,
+				3945B30F2046AB9E008CEF2D /* SQLite.framework */,
+				3945B3112046AB9E008CEF2D /* SQLiteTests tvOS.xctest */,
+				3945B3132046AB9E008CEF2D /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3945B3142046ABC6008CEF2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39FD38132270FDAF007BC29A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39A245E1228D888900AC18F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A245E9228D888A00AC18F0 /* Zip.framework */,
+				39A245EB228D888A00AC18F0 /* ZipTests.xctest */,
+				39A245ED228D888A00AC18F0 /* Zip.framework */,
+				39A245EF228D888A00AC18F0 /* Zip OSXTests.xctest */,
+				39A245F1228D888A00AC18F0 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39A8428F2046A859003102F1 = {
+			isa = PBXGroup;
+			children = (
+				39A842DC2046A910003102F1 /* pinyin.sqlite */,
+				39A8429A2046A859003102F1 /* PurePinyin */,
+				39A842D12046A8EA003102F1 /* PinyinKeyboard */,
+				39A842992046A859003102F1 /* Products */,
+				39A245E0228D888900AC18F0 /* Zip.xcodeproj */,
+				3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */,
+				3945B3142046ABC6008CEF2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39A842992046A859003102F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A842982046A859003102F1 /* PurePinyin.app */,
+				39A842D02046A8EA003102F1 /* PinyinKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39A8429A2046A859003102F1 /* PurePinyin */ = {
+			isa = PBXGroup;
+			children = (
+				39FAC10622798D9F00EB1420 /* PurePinyin.entitlements */,
+				3938B2D121A594B600908B68 /* appending.swift */,
+				3938B2DA21A594B600908B68 /* faststring.swift */,
+				3938B2DB21A594B700908B68 /* replace.swift */,
+				3938B2D821A594B600908B68 /* search.swift */,
+				3938B2DC21A594B700908B68 /* split.swift */,
+				3938B2D921A594B600908B68 /* substring.swift */,
+				39A8429B2046A859003102F1 /* AppDelegate.swift */,
+				39A8429D2046A859003102F1 /* ViewController.swift */,
+				396C1478222BD90C00BADCBD /* BrowserViewController.swift */,
+				39337A3F2157904100F05672 /* Base.swift */,
+				3978EE41222DF98600FCEF7C /* SettingsViewController.swift */,
+				39337A41215791B200F05672 /* PYView.swift */,
+				39337A3721578FA100F05672 /* PYViewController.swift */,
+				39A8429F2046A859003102F1 /* Main.storyboard */,
+				393FF373222DA46F00B160CD /* TabBarController.swift */,
+				39A842A52046A859003102F1 /* Assets.xcassets */,
+				39A842AA2046A859003102F1 /* Info.plist */,
+				39A842A22046A859003102F1 /* PurePinyin.xcdatamodeld */,
+			);
+			path = PurePinyin;
+			sourceTree = "<group>";
+		};
+		39A842D12046A8EA003102F1 /* PinyinKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				39FAC10722798E2300EB1420 /* PinyinKeyboard.entitlements */,
+				396AF27821540B61005DA562 /* Media.xcassets */,
+				39A842D22046A8EA003102F1 /* KeyboardViewController.swift */,
+				39A842D42046A8EA003102F1 /* Info.plist */,
+				39F06A142102065D008B86BE /* KB.xib */,
+				394B0C7F224D088A00331D4E /* Keyboard.xib */,
+			);
+			path = PinyinKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39A842972046A859003102F1 /* PurePinyin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A842C32046A859003102F1 /* Build configuration list for PBXNativeTarget "PurePinyin" */;
+			buildPhases = (
+				39A842942046A859003102F1 /* Sources */,
+				39A842952046A859003102F1 /* Frameworks */,
+				39A842962046A859003102F1 /* Resources */,
+				39A842DB2046A8EA003102F1 /* Embed App Extensions */,
+				398C796A2047F17D006C4A47 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39A245F3228D889F00AC18F0 /* PBXTargetDependency */,
+				39A842D62046A8EA003102F1 /* PBXTargetDependency */,
+				398C79692047F17D006C4A47 /* PBXTargetDependency */,
+			);
+			name = PurePinyin;
+			productName = PurePinyin;
+			productReference = 39A842982046A859003102F1 /* PurePinyin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39A842CF2046A8EA003102F1 /* PinyinKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A842D82046A8EA003102F1 /* Build configuration list for PBXNativeTarget "PinyinKeyboard" */;
+			buildPhases = (
+				39A842CC2046A8EA003102F1 /* Sources */,
+				39A842CD2046A8EA003102F1 /* Frameworks */,
+				39A842CE2046A8EA003102F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39D8FB52216B51F400AFA321 /* PBXTargetDependency */,
+			);
+			name = PinyinKeyboard;
+			productName = PinyinKeyboard;
+			productReference = 39A842D02046A8EA003102F1 /* PinyinKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39A842902046A859003102F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Joakim Fännick";
+				TargetAttributes = {
+					39A842972046A859003102F1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					39A842CF2046A8EA003102F1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 39A842932046A859003102F1 /* Build configuration list for PBXProject "PurePinyin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39A8428F2046A859003102F1;
+			productRefGroup = 39A842992046A859003102F1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3945B2FD2046AB9E008CEF2D /* Products */;
+					ProjectRef = 3945B2FC2046AB9E008CEF2D /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 39A245E1228D888900AC18F0 /* Products */;
+					ProjectRef = 39A245E0228D888900AC18F0 /* Zip.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				39A842972046A859003102F1 /* PurePinyin */,
+				39A842CF2046A8EA003102F1 /* PinyinKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3945B3072046AB9E008CEF2D /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3945B3062046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B3092046AB9E008CEF2D /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 3945B3082046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B30B2046AB9E008CEF2D /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3945B30A2046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B30D2046AB9E008CEF2D /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 3945B30C2046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B30F2046AB9E008CEF2D /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3945B30E2046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B3112046AB9E008CEF2D /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 3945B3102046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3945B3132046AB9E008CEF2D /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3945B3122046AB9E008CEF2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A245E9228D888A00AC18F0 /* Zip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Zip.framework;
+			remoteRef = 39A245E8228D888A00AC18F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A245EB228D888A00AC18F0 /* ZipTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZipTests.xctest;
+			remoteRef = 39A245EA228D888A00AC18F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A245ED228D888A00AC18F0 /* Zip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Zip.framework;
+			remoteRef = 39A245EC228D888A00AC18F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A245EF228D888A00AC18F0 /* Zip OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Zip OSXTests.xctest";
+			remoteRef = 39A245EE228D888A00AC18F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A245F1228D888A00AC18F0 /* Zip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Zip.framework;
+			remoteRef = 39A245F0228D888A00AC18F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39A842962046A859003102F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A842DD2046A911003102F1 /* pinyin.sqlite in Resources */,
+				39A842A62046A859003102F1 /* Assets.xcassets in Resources */,
+				39A842A12046A859003102F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A842CE2046A8EA003102F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F06A152102065D008B86BE /* KB.xib in Resources */,
+				396AF27921540B61005DA562 /* Media.xcassets in Resources */,
+				394B0C80224D088A00331D4E /* Keyboard.xib in Resources */,
+				39A842DE2046A911003102F1 /* pinyin.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39A842942046A859003102F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A8429E2046A859003102F1 /* ViewController.swift in Sources */,
+				39337A42215791B200F05672 /* PYView.swift in Sources */,
+				3938B2E221A594B700908B68 /* split.swift in Sources */,
+				3938B2E121A594B700908B68 /* replace.swift in Sources */,
+				3938B2DF21A594B700908B68 /* substring.swift in Sources */,
+				39337A3821578FA100F05672 /* PYViewController.swift in Sources */,
+				39337A402157904100F05672 /* Base.swift in Sources */,
+				3938B2DD21A594B700908B68 /* appending.swift in Sources */,
+				3978EE42222DF98600FCEF7C /* SettingsViewController.swift in Sources */,
+				396C1479222BD90C00BADCBD /* BrowserViewController.swift in Sources */,
+				3938B2DE21A594B700908B68 /* search.swift in Sources */,
+				39A842A42046A859003102F1 /* PurePinyin.xcdatamodeld in Sources */,
+				393FF374222DA46F00B160CD /* TabBarController.swift in Sources */,
+				3938B2E021A594B700908B68 /* faststring.swift in Sources */,
+				39A8429C2046A859003102F1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A842CC2046A8EA003102F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398654FC222D50F100750079 /* faststring.swift in Sources */,
+				398654FD222D50F100750079 /* replace.swift in Sources */,
+				398654FB222D50F100750079 /* appending.swift in Sources */,
+				39AFF536227855A600F78EB6 /* AppDelegate.swift in Sources */,
+				39865500222D50F100750079 /* substring.swift in Sources */,
+				398654FE222D50F100750079 /* search.swift in Sources */,
+				398654F3222D4F0B00750079 /* Base.swift in Sources */,
+				398654FF222D50F100750079 /* split.swift in Sources */,
+				39A842D32046A8EA003102F1 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		398C79692047F17D006C4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 398C79682047F17D006C4A47 /* PBXContainerItemProxy */;
+		};
+		39A245F3228D889F00AC18F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			targetProxy = 39A245F2228D889F00AC18F0 /* PBXContainerItemProxy */;
+		};
+		39A842D62046A8EA003102F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39A842CF2046A8EA003102F1 /* PinyinKeyboard */;
+			targetProxy = 39A842D52046A8EA003102F1 /* PBXContainerItemProxy */;
+		};
+		39D8FB52216B51F400AFA321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 39D8FB51216B51F400AFA321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39A8429F2046A859003102F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39A842A02046A859003102F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39A842C12046A859003102F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A842C22046A859003102F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A842C42046A859003102F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PurePinyin/PurePinyin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ6QKQ9872;
+				INFOPLIST_FILE = PurePinyin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purepinyin.PurePinyin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A842C52046A859003102F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PurePinyin/PurePinyin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ6QKQ9872;
+				INFOPLIST_FILE = PurePinyin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purepinyin.PurePinyin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39A842D92046A8EA003102F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinyinKeyboard/PinyinKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ6QKQ9872;
+				INFOPLIST_FILE = PinyinKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purepinyin.PurePinyin.PinyinKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A842DA2046A8EA003102F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinyinKeyboard/PinyinKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ6QKQ9872;
+				INFOPLIST_FILE = PinyinKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purepinyin.PurePinyin.PinyinKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39A842932046A859003102F1 /* Build configuration list for PBXProject "PurePinyin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A842C12046A859003102F1 /* Debug */,
+				39A842C22046A859003102F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A842C32046A859003102F1 /* Build configuration list for PBXNativeTarget "PurePinyin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A842C42046A859003102F1 /* Debug */,
+				39A842C52046A859003102F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A842D82046A8EA003102F1 /* Build configuration list for PBXNativeTarget "PinyinKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A842D92046A8EA003102F1 /* Debug */,
+				39A842DA2046A8EA003102F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39A842A22046A859003102F1 /* PurePinyin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39A842A32046A859003102F1 /* PurePinyin.xcdatamodel */,
+			);
+			currentVersion = 39A842A32046A859003102F1 /* PurePinyin.xcdatamodel */;
+			path = PurePinyin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39A842902046A859003102F1 /* Project object */;
+}
